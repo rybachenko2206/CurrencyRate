@@ -8,6 +8,7 @@
 
 
 import UIKit
+import SVProgressHUD
 
 class CurrencyRateViewController: UIViewController, StoryboardIdentifier {
     // MARK: Outlets
@@ -17,8 +18,7 @@ class CurrencyRateViewController: UIViewController, StoryboardIdentifier {
     // MARK: Overriden funcs
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Today"
     }
 
 

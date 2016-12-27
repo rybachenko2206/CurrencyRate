@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="913" y="778"/>
         </scene>
-        <!--View Controller-->
+        <!--Currency Rate View Controller-->
         <scene sceneID="ReQ-mg-871">
             <objects>
-                <viewController id="X3o-tg-Wdg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrencyRateViewController" id="X3o-tg-Wdg" customClass="CurrencyRateViewController" customModule="ExchangeRate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KLp-We-J3O"/>
                         <viewControllerLayoutGuide type="bottom" id="Yzh-l7-MuY"/>

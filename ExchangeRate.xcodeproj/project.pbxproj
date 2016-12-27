@@ -41,6 +41,7 @@
 		422ECABB1E12A7220094C008 /* CurrencyRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateViewController.swift; sourceTree = "<group>"; };
 		422ECABE1E12A7A80094C008 /* ManagedObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectType.swift; sourceTree = "<group>"; };
 		422ECABF1E12A7A80094C008 /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
+		422ECAC21E12AF650094C008 /* ExchangeRate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExchangeRate-Bridging-Header.h"; sourceTree = "<group>"; };
 		42D83BD51E1299F300F23EA3 /* ExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D83BDF1E1299F300F23EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D83BE11E1299F300F23EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				42D83C0C1E129A9C00F23EA3 /* AppDelegate.swift */,
+				422ECAC21E12AF650094C008 /* ExchangeRate-Bridging-Header.h */,
 				422ECABD1E12A7A80094C008 /* Protocols */,
 				42D83C101E129A9C00F23EA3 /* Model */,
 				42D83C111E129A9C00F23EA3 /* View */,
@@ -283,6 +285,7 @@
 					42D83BD41E1299F300F23EA3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UHJFHS6M7R;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					42D83BEA1E1299F300F23EA3 = {
@@ -555,12 +558,15 @@
 			baseConfigurationReference = 4D356647A83140B9AD683309 /* Pods-ExchangeRate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrybachenko.ExchangeRate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeRate/Classes/ExchangeRate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -571,12 +577,14 @@
 			baseConfigurationReference = 9E781A709A9CDB28649C87EC /* Pods-ExchangeRate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrybachenko.ExchangeRate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeRate/Classes/ExchangeRate-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
