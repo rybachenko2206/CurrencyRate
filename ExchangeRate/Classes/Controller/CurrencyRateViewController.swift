@@ -19,7 +19,18 @@ class CurrencyRateViewController: UIViewController, StoryboardIdentifier {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Today"
+        
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        SVProgressHUD.show()
+        WebService.sharedInstance.getNBUCurrencyRates(completion: {(respInfo: ResponseInfo) -> Void in
+            SVProgressHUD.dismiss()
+            print(respInfo.response ?? respInfo.error!)
+            
+        })
+    }
 
 }

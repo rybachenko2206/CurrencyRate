@@ -11,6 +11,10 @@
 		422ECABC1E12A7220094C008 /* CurrencyRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECABB1E12A7220094C008 /* CurrencyRateViewController.swift */; };
 		422ECAC01E12A7A80094C008 /* ManagedObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECABE1E12A7A80094C008 /* ManagedObjectType.swift */; };
 		422ECAC11E12A7A80094C008 /* StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECABF1E12A7A80094C008 /* StoryboardIdentifier.swift */; };
+		422ECAC91E12F7980094C008 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECAC81E12F7980094C008 /* WebService.swift */; };
+		422ECACB1E12F7D00094C008 /* ResponseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECACA1E12F7D00094C008 /* ResponseInfo.swift */; };
+		422ECACD1E12F7F30094C008 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECACC1E12F7F30094C008 /* Constants.swift */; };
+		422ECACF1E1308BE0094C008 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ECACE1E1308BE0094C008 /* XMLParser.swift */; };
 		42D83BE01E1299F300F23EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D83BDE1E1299F300F23EA3 /* Main.storyboard */; };
 		42D83BE21E1299F300F23EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D83BE11E1299F300F23EA3 /* Assets.xcassets */; };
 		42D83BE51E1299F300F23EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D83BE31E1299F300F23EA3 /* LaunchScreen.storyboard */; };
@@ -42,6 +46,10 @@
 		422ECABE1E12A7A80094C008 /* ManagedObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectType.swift; sourceTree = "<group>"; };
 		422ECABF1E12A7A80094C008 /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
 		422ECAC21E12AF650094C008 /* ExchangeRate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExchangeRate-Bridging-Header.h"; sourceTree = "<group>"; };
+		422ECAC81E12F7980094C008 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		422ECACA1E12F7D00094C008 /* ResponseInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseInfo.swift; sourceTree = "<group>"; };
+		422ECACC1E12F7F30094C008 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
+		422ECACE1E1308BE0094C008 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		42D83BD51E1299F300F23EA3 /* ExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D83BDF1E1299F300F23EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D83BE11E1299F300F23EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +99,15 @@
 				422ECABF1E12A7A80094C008 /* StoryboardIdentifier.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		422ECAC61E12F7230094C008 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				422ECAC81E12F7980094C008 /* WebService.swift */,
+				422ECACE1E1308BE0094C008 /* XMLParser.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		42D83BCC1E1299F300F23EA3 = {
@@ -165,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				42D83C0C1E129A9C00F23EA3 /* AppDelegate.swift */,
+				422ECACC1E12F7F30094C008 /* Constants.swift */,
 				422ECAC21E12AF650094C008 /* ExchangeRate-Bridging-Header.h */,
 				422ECABD1E12A7A80094C008 /* Protocols */,
 				42D83C101E129A9C00F23EA3 /* Model */,
@@ -185,6 +203,8 @@
 		42D83C101E129A9C00F23EA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				422ECACA1E12F7D00094C008 /* ResponseInfo.swift */,
+				422ECAC61E12F7230094C008 /* Managers */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,9 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422ECACF1E1308BE0094C008 /* XMLParser.swift in Sources */,
 				422ECAC01E12A7A80094C008 /* ManagedObjectType.swift in Sources */,
 				422ECAC11E12A7A80094C008 /* StoryboardIdentifier.swift in Sources */,
+				422ECACB1E12F7D00094C008 /* ResponseInfo.swift in Sources */,
 				422ECABC1E12A7220094C008 /* CurrencyRateViewController.swift in Sources */,
+				422ECACD1E12F7F30094C008 /* Constants.swift in Sources */,
+				422ECAC91E12F7980094C008 /* WebService.swift in Sources */,
 				42D83C121E129A9C00F23EA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
