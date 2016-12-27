@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nf1-YN-NWD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wqa-2p-h0B">
+            <objects>
+                <tabBarController id="Nf1-YN-NWD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="zOd-kE-p4n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xnb-vk-PAd" kind="relationship" relationship="viewControllers" id="oBd-tp-HLe"/>
+                        <segue destination="mRf-Oi-kGS" kind="relationship" relationship="viewControllers" id="QQf-Z8-6B3"/>
+                        <segue destination="O01-Pl-oEd" kind="relationship" relationship="viewControllers" id="5KS-cZ-ek1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hq2-LD-7QB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="-99"/>
+        </scene>
+        <!--Charts-->
+        <scene sceneID="zWZ-tx-dIw">
+            <objects>
+                <viewController id="O01-Pl-oEd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yDB-7T-h2p"/>
+                        <viewControllerLayoutGuide type="bottom" id="rcd-3x-2NO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lpt-q9-17w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="charts" id="dbu-Lb-WSh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfg-ae-B46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="109"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="wVI-OR-ajQ">
+            <objects>
+                <viewController id="mRf-Oi-kGS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oCo-ri-Gw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="vbr-mp-oYJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEy-vP-5La">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" image="list" id="d5m-s3-xJe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXJ-xR-zH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="778"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ReQ-mg-871">
+            <objects>
+                <viewController id="X3o-tg-Wdg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KLp-We-J3O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yzh-l7-MuY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAj-dQ-3aY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QX0-8m-1dP">
+                        <barButtonItem key="rightBarButtonItem" image="reload" id="6Bc-fv-5h0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXT-gH-Jxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="-546"/>
+        </scene>
+        <!--Currency rate-->
+        <scene sceneID="tAk-bK-RuF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xnb-vk-PAd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Currency rate" image="currency_exchange" id="MDM-Ux-bAB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KvR-4Q-Glg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X3o-tg-Wdg" kind="relationship" relationship="rootViewController" id="EjM-D3-SBv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWX-qX-KG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-546"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="charts" width="33" height="33"/>
+        <image name="currency_exchange" width="33" height="33"/>
+        <image name="list" width="33" height="33"/>
+        <image name="reload" width="33" height="33"/>
+    </resources>
+</document>
